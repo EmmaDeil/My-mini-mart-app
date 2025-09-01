@@ -6,7 +6,7 @@ import { faBuilding, faTools, faCogs } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <div className="homepage">
-      <div className="container topMain">
+      <div className="container-fluid topMain">
         <div className="row">
         <h1 className="display-4">
           Facility Management & Maintenance Procurement
@@ -15,9 +15,9 @@ const Home = () => {
           We help facilities manage their property and provide maintenance tools
           and systems.
         </p>
-        <div className="">
-          <button className="btn btn-primary">Book a Service</button>
-          <button className="btn btn-secondary">Visit Marketplace</button>
+        <div className="button-group" style={{ gap: "1rem", display: "inline-flex", padding: "1rem" }}>
+          <button type="button" className="btn btn-primary">Book a Service</button>
+          <button type="button" className="btn btn-outline-dark">Visit Marketplace</button>
         </div>
       </div>
         </div>

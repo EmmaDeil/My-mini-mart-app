@@ -75,7 +75,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-transparent">
+      <nav className="navbar navbar-expand-lg mainNavbar">
         <div className="container-fluid">
           <Link className="navbar-brand the-logo" to="/">
             <img
@@ -99,31 +99,31 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faAlignRight} />
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0"
+              className="navbar-nav me-auto mb-2 mb-lg-0"
               style={{ marginLeft: "auto" }}
             >
               <li className="nav-item">
-                <Link class="nav-link" to="#">
+                <Link className="nav-link" to="#">
                   <FontAwesomeIcon icon={faInfoCircle} />
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link class="nav-link" to="#">
+                <Link className="nav-link" to="#">
                   <FontAwesomeIcon icon={faConciergeBell} />
                   Services
                 </Link>
               </li>
                   <li>
-                    <Link class="nav-link" to="/contact">
+                    <Link className="nav-link" to="/contact">
                       <FontAwesomeIcon icon={faEnvelope} />
                       Contact
                     </Link>
                   </li>
-              {/* <Link class="nav-item" to="#">
-              <a class="nav-link disabled" aria-disabled="true">
+              {/* <Link className="nav-item" to="#">
+              <a className="nav-link disabled" aria-disabled="true">
                 Disabled
               </a>
             </Link> */}
