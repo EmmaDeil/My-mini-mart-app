@@ -21,8 +21,8 @@ const About = () => {
 
       <h3>Our Values</h3>
       <div className="container">
-        <div className="row">
-          <div className="col">
+        <div className="row g-5">
+          <div className="col card">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Innovation</h4>
             <p>
@@ -30,12 +30,12 @@ const About = () => {
               solutions.
             </p>
           </div>
-          <div className="col">
+          <div className="col card">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Integrity</h4>
             <p>We conduct our business with honesty and transparency.</p>
           </div>
-          <div className="col">
+          <div className="col card">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Customer Focus</h4>
             <p>
@@ -43,41 +43,21 @@ const About = () => {
               expectations.
             </p>
           </div>
-          <div className="col">
+          <div className="col card">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Collaboration</h4>
             <p>We believe in the power of teamwork and partnerships.</p>
           </div>
-          <div className="col">
+          <div className="col card">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Sustainability</h4>
             <p>We are committed to environmentally responsible practices.</p>
           </div>
         </div>
       </div>
-      <ul>
-        <li>
-          Innovation: We embrace change and continuously seek new ways to
-          improve our solutions.
-        </li>
-        <li>
-          Integrity: We conduct our business with honesty and transparency.
-        </li>
-        <li>
-          Customer Focus: We prioritize our clients' needs and strive to exceed
-          their expectations.
-        </li>
-        <li>
-          Collaboration: We believe in the power of teamwork and partnerships.
-        </li>
-        <li>
-          Sustainability: We are committed to environmentally responsible
-          practices.
-        </li>
-      </ul>
-
+      
       <h3>Meet Our Team</h3>
-      <p>
+      <p className="lead">
         Our team is composed of dedicated professionals with diverse backgrounds
         and expertise in facility management, technology, and customer service.
         We work collaboratively to deliver the best solutions for our clients.

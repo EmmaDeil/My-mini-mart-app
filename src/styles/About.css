@@ -8,6 +8,7 @@ padding: 5px 20px;
 h3 {
    font-size: 2.5rem !important;
    margin-top: 2rem !important;
+   margin-bottom: 1rem !important;
    padding: 5px 20px;
    text-transform: capitalize;
 }
@@ -17,7 +18,7 @@ h3 {
    line-height: 1.2;
    width: 79rem !important;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+ 
   padding: 1rem 1rem 2rem 1rem;
    hyphens: auto;
    overflow-wrap: break-word;
