@@ -38,7 +38,7 @@ const Home = () => {
           </div>
           <div className="col-6 col-md-4">
             <div className="wrap-text">
-              <h1 className="icon"><FontAwesomeIcon icon={faCogs} /></h1>
+              <h1 className="icon"><FontAwesomeIcon icon={faCogs} className="icon" /></h1>
               <p>
                 Some long text that should wrap within the column and
                 demonstrate the CSS properties applied.

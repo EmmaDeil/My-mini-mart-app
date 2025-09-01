@@ -1,3 +1,7 @@
+.topMain {
+  margin: 20px 0 20px 0;
+}
+
 .display-4 {
   font-size: 3.5rem !important;
   font-weight: 600 !important;
@@ -8,17 +12,23 @@
   word-break: break-word;
 }
 
-@media (min-width: 600px) {
-  .display-4 .row {
-    /* Styles for tablet and above */
-      display: flex;
-      flex-wrap: wrap;
-    
+@media (max-width: 600px) {
+  .homepage {
+    max-width: 100%;
+  }
+  .topMain {
+    /* max-width: 100%; */
+    margin: 20px 0 20px 0;
+  }
+  .display-4 {
+   max-width: 80% !important;
+   font-weight: 500 !important;
+   font-size: 2.5rem !important;
   }
 }
 
 .display-4 .icon {
-  font-size: 4rem !important;
+  font-size: 180rem !important;
 }
 
 .lead {
@@ -30,6 +40,3 @@
   word-break: break-word;
 }
 
-.topMain {
-  margin: 20px 20px 20px 0;
-}
