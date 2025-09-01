@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer/Footer";
 import PageTitle from "./components/PageTitle";
+import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -26,7 +27,7 @@ function App() {
               <Route path="/" element={<Home />} />
               {/* <Route path="/login" element={<LoginForm />} /> */}
               {/* <Route path="/careers" element={<Careers />} /> */}
-              {/* <Route path="/contact" element={<ContactPage />} /> */}
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

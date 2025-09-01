@@ -63,7 +63,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle, faConciergeBell } from '@fortawesome/free-solid-svg-icons';
+import {
+  faInfoCircle,
+  faConciergeBell,
+  faAlignRight,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   // const [showSearch, setShowSearch] = React.useState(false);
@@ -82,34 +87,51 @@ const Navbar = () => {
             />
             Ladeil Innovations
           </Link>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style={{ border: "none" }}
+          >
+            <FontAwesomeIcon icon={faAlignRight} />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style={{marginLeft: 'auto'}}>
-            <li className="nav-item">
-            <Link class="nav-link" to="#"> 
-              <FontAwesomeIcon icon={faInfoCircle} /> 
-              About
-            </Link>
-            </li>
-            <li className="nav-item">
-            <Link class="nav-link" to="#">
-              <FontAwesomeIcon icon={faConciergeBell} />
-              Services
-            </Link>
-            </li>
-            {/* <Link class="nav-link" to="#">
-              Link
-            </Link> */}
-            {/* <Link class="nav-item" to="#">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+              style={{ marginLeft: "auto" }}
+            >
+              <li className="nav-item">
+                <Link class="nav-link" to="#">
+                  <FontAwesomeIcon icon={faInfoCircle} />
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link class="nav-link" to="#">
+                  <FontAwesomeIcon icon={faConciergeBell} />
+                  Services
+                </Link>
+              </li>
+                  <li>
+                    <Link class="nav-link" to="/contact">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                      Contact
+                    </Link>
+                  </li>
+              {/* <Link class="nav-item" to="#">
               <a class="nav-link disabled" aria-disabled="true">
                 Disabled
               </a>
             </Link> */}
-          </ul>
-            <button className="btn btn-primary"><FontAwesomeIcon icon={faConciergeBell} /> Book a Service</button>
-            </div>
+            </ul>
+            <button className="btn btn-primary">
+              <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
+            </button>
+          </div>
         </div>
       </nav>
     </div>
