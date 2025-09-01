@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import PageTitle from "./components/PageTitle";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
-
+import About from "./pages/About";
 
 function App() {
   return (
@@ -27,7 +27,9 @@ function App() {
               <Route path="/" element={<Home />} />
               {/* <Route path="/login" element={<LoginForm />} /> */}
               {/* <Route path="/careers" element={<Careers />} /> */}
+              {/* <Route path="/services" element={<Services />} /> */}
               <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
