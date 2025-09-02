@@ -2,6 +2,7 @@ import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "../styles/About.css";
+import SpotlightCard from './SpotlightCard';
 
 const About = () => {
   return (
@@ -103,6 +104,9 @@ const About = () => {
         </span>
       </div>
          </div>
+<SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+  // Content goes here
+</SpotlightCard>
     </div>
   );
 };
