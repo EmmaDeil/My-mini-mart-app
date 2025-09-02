@@ -116,18 +116,19 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
-                  <li>
+                  <li className="nav-item">
                     <Link className="nav-link" to="/contact">
                       <FontAwesomeIcon icon={faEnvelope} />
                       Contact
                     </Link>
                   </li>
-              {/* <Link className="nav-item" to="#">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </Link> */}
-            </ul>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/partners">
+                  <FontAwesomeIcon icon={faInfoCircle} />
+                    Our Partners
+                  </Link>
+                </li>
+              </ul>
             <button className="btn btn-primary">
               <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
             </button>
