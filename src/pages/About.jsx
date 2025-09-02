@@ -55,53 +55,54 @@ const About = () => {
           </div>
         </div>
       </div>
-      
+
       <h3>Meet Our Team</h3>
       <p className="lead">
         Our team is composed of dedicated professionals with diverse backgrounds
         and expertise in facility management, technology, and customer service.
         We work collaboratively to deliver the best solutions for our clients.
       </p>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="John Doe"
-              className="teamImg"
-              width={100}
-              height={100}
-            />
+      <div className="team-section">
+         <div className="row">
+        <span className="col-6 col-md-4">
+          <img
+            src="../src/assets/man1.png"
+            alt="David Emma"
+            className="teamImg"
+          />
+          <h4>David Emmaunel O.</h4>
+          <p><i>CEO</i></p>
+        </span>
+        <span className="col-6 col-md-4">
+          <img
+            src="../src/assets/man1.png"
+            alt="John Doe"
+            className="teamImg"
+          />
+          <h4>John Doe</h4>
+          <p><i>Facility Manager</i></p>
+        </span>
+        <span className="col-6 col-md-4">
+          <img
+            src="../src/assets/man1.png"
+            alt="Jane Smith"
+            className="teamImg"
+          />
 
-            <h4>John Doe</h4>
-            <p>Facility Manager</p>
-          </div>
-          <div className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="Jane Smith"
-              className="teamImg"
-              width={100}
-              height={100}
-            />
-
-            <h4>Jane Smith</h4>
-            <p>Technology Specialist</p>
-          </div>
-          <div className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="Emily Johnson"
-              className="teamImg"
-              width={100}
-              height={100}
-            />
-
-            <h4>Emily Johnson</h4>
-            <p>Customer Service Representative</p>
-          </div>
-        </div>
+          <h4>Jane Smith</h4>
+          <p><i>Technology Specialist</i></p>
+        </span>
+        <span className="col-6 col-md-4">
+          <img
+            src="../src/assets/man1.png"
+            alt="Emily Johnson"
+            className="teamImg"
+          />
+          <h4>Emily Johnson</h4>
+          <p><i>Customer Service Representative</i></p>
+        </span>
       </div>
+         </div>
     </div>
   );
 };

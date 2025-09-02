@@ -67,7 +67,7 @@ import {
   faInfoCircle,
   faConciergeBell,
   faAlignRight,
-  faEnvelope
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -100,10 +100,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faAlignRight} />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              className="navbar-nav me-auto mb-2 mb-lg-0"
-              style={{ marginLeft: "auto" }}
-            >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   <FontAwesomeIcon icon={faInfoCircle} />
@@ -116,19 +113,19 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/contact">
-                      <FontAwesomeIcon icon={faEnvelope} />
-                      Contact
-                    </Link>
-                  </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/partners">
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/partners">
                   <FontAwesomeIcon icon={faInfoCircle} />
-                    Our Partners
-                  </Link>
-                </li>
-              </ul>
+                  Our Partners
+                </Link>
+              </li>
+            </ul>
             <button className="btn btn-primary">
               <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
             </button>

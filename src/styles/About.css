@@ -27,4 +27,39 @@ h3 {
 .teamImg {
    border-radius: 50%;
    margin-bottom: 10px;
+   width: 15rem;
+   height: 12rem;
+}
+
+.team-section {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+   /* min-width: 100%; */
+   margin-top: -3.5rem;
+   margin-left: 4rem;
+   padding: 1rem;
+}
+
+.team-section p {
+   font-size: 0.8rem;
+   line-height: 1.2;
+   margin: 0 1rem;
+   color: dodgerblue;
+   text-align: start;
+}
+
+
+@media (max-width: 600px) {
+   .teamImg {
+       width: 5rem;
+       height: 5rem;
+   }
+   .team-section {
+       flex-direction: column;
+       margin-top: -2rem;
+       margin-left: 2rem;
+   }
 }
