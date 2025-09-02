@@ -3,3 +3,113 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .homepage {
+    max-width: 100%;
+  }
+  .topMain {
+    /* max-width: 100%; */
+    margin: 20px 0 20px 0;
+  }
+  .display-4 {
+   max-width: 80% !important;
+   font-weight: 500 !important;
+   font-size: 2.5rem !important;
+  }
+  .display-4 .icon {
+    font-size: 180rem !important;
+  }
+  .lead {
+    max-width: 100% !important;
+    font-weight: 100 !important;
+    font-size: 1.2rem !important;
+    line-height: 2.1rem !important;
+  }
+  .abouthead {
+    max-width: 100% !important;
+    font-weight: 600 !important;
+    font-size: 3rem !important;
+  }
+  .values {
+    margin: 1rem 5rem 0 1rem;
+    padding: 2rem;
+    max-width: 100%;
+    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rad {
+    border: 1px solid black;
+    max-height: 15rem;
+  }
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .display-4 {
+    max-width: 100% !important;
+    font-size: 3rem !important;
+    font-weight: 500 !important;
+  }
+  .lead {
+    max-width: 100% !important;
+    font-weight: 100 !important;
+    font-size: 1.4rem !important;
+    line-height: 2.3rem !important;
+  }
+  .abouthead {
+    max-width: 100% !important;
+    font-weight: 600 !important;
+    font-size: 3rem !important;
+  }
+  .values {
+    margin: 1rem 5rem 0 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rad {
+    border: 1px solid black;
+    max-height: 25rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .display-4 {
+    max-width: 60% !important;
+    font-size: 3.5rem !important;
+    font-weight: 600 !important;
+  }
+  .lead {
+    min-width: 100% !important;
+    font-weight: 100 !important;
+    font-size: 1.4rem !important;
+    line-height: 2.1rem !important;
+  }
+  .abouthead {
+    max-width: 100% !important;
+    font-weight: 600 !important;
+    font-size: 3rem !important;
+  }
+  .values {
+    margin: 1rem 5rem 0 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rad {
+    border: 1px solid black;
+    max-height: 25rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+}

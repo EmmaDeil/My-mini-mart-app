@@ -24,42 +24,6 @@
   white-space: normal;
   word-break: break-word;
 }
-/* Mobile view */
-@media (max-width: 600px) {
-  .homepage {
-    max-width: 100%;
-  }
-  .topMain {
-    /* max-width: 100%; */
-    margin: 20px 0 20px 0;
-  }
-  .display-4 {
-   max-width: 80% !important;
-   font-weight: 500 !important;
-   font-size: 2.5rem !important;
-  }
-  .display-4 .icon {
-    font-size: 180rem !important;
-  }
-}
-
-/* Tablet view */
-@media (max-width: 992px) {
-  .display-4 {
-    max-width: 100% !important;
-    font-size: 3rem !important;
-    font-weight: 500 !important;
-  }
-}
-
-/* Desktop view */
-@media (min-width: 992px) {
-  .display-4 {
-    max-width: 60% !important;
-    font-size: 3.5rem !important;
-    font-weight: 600 !important;
-  }
-}
 
 .display-4 .icon {
   font-size: 180rem !important;

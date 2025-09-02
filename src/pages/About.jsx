@@ -6,7 +6,7 @@ import "../styles/About.css";
 const About = () => {
   return (
     <div>
-      <h2>About Ladeil Innovations LTD</h2>
+      <h2 className="abouthead">About Ladeil Innovations LTD</h2>
       <h3>Our Mission</h3>
       <p className="lead">
         At Ladeil, our mission is to revolutionize facility management by
@@ -21,8 +21,8 @@ const About = () => {
 
       <h3>Our Values</h3>
       <div className="container">
-        <div className="row g-5">
-          <div className="col card">
+        <div className="row g-5 values">
+          <div className="col rad">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Innovation</h4>
             <p>
@@ -30,12 +30,12 @@ const About = () => {
               solutions.
             </p>
           </div>
-          <div className="col card">
+          <div className="col rad">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Integrity</h4>
             <p>We conduct our business with honesty and transparency.</p>
           </div>
-          <div className="col card">
+          <div className="col rad">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Customer Focus</h4>
             <p>
@@ -43,12 +43,12 @@ const About = () => {
               expectations.
             </p>
           </div>
-          <div className="col card">
+          <div className="col rad">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Collaboration</h4>
             <p>We believe in the power of teamwork and partnerships.</p>
           </div>
-          <div className="col card">
+          <div className="col rad">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Sustainability</h4>
             <p>We are committed to environmentally responsible practices.</p>
