@@ -38,7 +38,7 @@ const Footer = () => {
               We offer a wide range of services to meet your needs.
             </p>
             <ul className="list-unstyled" id="serviceslist">
-              <li>
+              <li >
                 <a href="#">Facility Management</a>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col">
-            
+
           </div>
           <div className="col">
             <h6 className="section-title">Download Our App</h6>

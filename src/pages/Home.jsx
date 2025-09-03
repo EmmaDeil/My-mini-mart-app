@@ -47,6 +47,30 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="container-fluid bg-tertiary" id="subscribe">
+          <h3 className="subword">Stay Updated, Stay Connected</h3>
+          <h6 className="subwork">Get Our News And Updates</h6>
+          <div className="scribe">
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your email"
+              className="subinput"
+            />
+            <button type="submit" className="btn btn-primary subbtn">
+              Subscribe
+            </button>
+          </div>
+          <h6 className="letter-1">
+            <input type="checkbox" name="checkbox" id="" />
+            By subscribing you agree to our{" "}
+            <a href="#" className="letter-2">
+              Privacy Policy
+            </a>
+          </h6>
+        </div>
     </div>
   );
 };

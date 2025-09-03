@@ -56,14 +56,13 @@
 #serviceslist {
   display: flex;
   flex-wrap: wrap;
-  word-wrap: break-word;
   width: 100%;
   gap: 1rem;
 }
 
-#serviceslist a {
-  
-  /* box-sizing: border-box; */
+#serviceslist li {
+  /* flex: 1 1 calc(33.333% - 1rem); use for grid boxes */
+
 }
 
 #serviceslist li a {
