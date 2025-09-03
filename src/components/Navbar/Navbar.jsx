@@ -61,7 +61,6 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInfoCircle,
@@ -103,25 +102,33 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
-                  <FontAwesomeIcon icon={faInfoCircle} />
+                  <span className="icon-container me-2">
+                    <FontAwesomeIcon icon={faInfoCircle} />
+                  </span>
                   About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/services">
-                  <FontAwesomeIcon icon={faConciergeBell} />
+                  <span className="icon-container me-2">
+                    <FontAwesomeIcon icon={faConciergeBell} />
+                  </span>
                   Services
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <span className="icon-container me-2">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </span>
                   Contact
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/partners">
-                  <FontAwesomeIcon icon={faInfoCircle} />
+                  <span className="icon-container me-2">
+                    <FontAwesomeIcon icon={faInfoCircle} />
+                  </span>
                   Our Partners
                 </Link>
               </li>

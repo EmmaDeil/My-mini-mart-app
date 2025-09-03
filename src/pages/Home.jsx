@@ -1,25 +1,24 @@
 import React from "react";
-import "../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faTools, faCogs } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div>
       <div className="container-fluid topMain">
         <div className="row">
-          <h1 className="display-4">
+          <h1 className="display-1">
             Facility Management & Maintenance Procurement
           </h1>
-          <p className="leab">
+          <p className="display-2">
             We help facilities manage their property and provide maintenance
             tools and systems.
           </p>
           <div className="button-group">
-            <button type="button" className="btn btn-primary">
+            <button type="button" className="btn btn-primary" style={{cursor: "pointer"}}>
               Book a Service
             </button>
-            <button type="button" className="btn btn-outline-dark">
+            <button type="button" className="btn btn-outline-dark" style={{cursor: "pointer"}}>
               Visit Marketplace
             </button>
           </div>

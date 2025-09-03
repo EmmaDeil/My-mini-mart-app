@@ -1,15 +1,14 @@
 import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import "../styles/About.css";
 import SpotlightCard from "../components/SpotlightCard";
 
 const About = () => {
   return (
     <div>
       <h2 className="abouthead">About Ladeil Innovations LTD</h2>
-      <h3>Our Mission</h3>
-      <p className="lead">
+      <h3 className="about-h3">Our Mission</h3>
+      <p className="aboutlead">
         At Ladeil, our mission is to revolutionize facility management by
         providing innovative, efficient, and user-friendly solutions. We strive
         to empower businesses to optimize their operations, reduce costs, and
@@ -20,7 +19,7 @@ const About = () => {
         to our clients.
       </p>
 
-      <h3>Our Values</h3>
+      <h3 className="about-h3">Our Values</h3>
       <div className="container">
         <div className="row g-5 values">
           <div className="col rad">
@@ -57,8 +56,8 @@ const About = () => {
         </div>
       </div>
 
-      <h3>Meet Our Team</h3>
-      <p className="lead">
+      <h3 className="about-h3">Meet Our Team</h3>
+      <p className="aboutlead">
         Our team is composed of dedicated professionals with diverse backgrounds
         and expertise in facility management, technology, and customer service.
         We work collaboratively to deliver the best solutions for our clients.
