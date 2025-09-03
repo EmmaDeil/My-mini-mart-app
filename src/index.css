@@ -2,3 +2,76 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 } */
 
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+.footspace {
+  margin-bottom: 1rem;
+}
+
+.footlogo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.footlogo img {
+  width: 4.4rem;
+  height: auto;
+}
+
+.core {
+  font-weight: normal;
+  word-wrap: break-word;
+  width: 60%;
+  color: white;
+}
+
+.footicon{
+  color: white;
+  font-size: 0.92rem;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.footicon:hover {
+  color: dodgerblue;
+  border-radius: 0.15rem;
+}
+
+.section-title {
+  font-weight: semibold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+#serviceslist {
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  width: 100%;
+  gap: 1rem;
+}
+
+#serviceslist a {
+  
+  /* box-sizing: border-box; */
+}
+
+#serviceslist li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#footer-divider {
+  margin: 1rem 0;
+  border-top: 3px solid #eee;
+}

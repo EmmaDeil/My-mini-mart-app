@@ -2,7 +2,7 @@ import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "../styles/About.css";
-import SpotlightCard from './SpotlightCard';
+import SpotlightCard from "../components/SpotlightCard";
 
 const About = () => {
   return (
