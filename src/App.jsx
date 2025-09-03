@@ -13,7 +13,6 @@ import About from "./pages/About";
 function App() {
   return (
     <>
-      {/* <h3><FontAwesomeIcon icon="fa-solid fa-dog" /><FontAwesomeIcon icon={faHouse} />Home</h3>  */}
       <Routes>
         {/* Users route without navbar/footer */}
         {/* <Route path="/users" element={<Users />} /> */}

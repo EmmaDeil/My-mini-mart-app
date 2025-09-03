@@ -14,8 +14,15 @@
     max-width: 100%;
   }
   .topMain {
-    /* max-width: 100%; */
     margin: 20px 0 20px 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    background-image: url("./assets/man1.png");
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 5rem;
+    background-attachment: fixed;
   }
   .display-4 {
     max-width: 80% !important;
@@ -26,14 +33,14 @@
     font-size: 180rem !important;
   }
   .leab {
-    max-width: 50%;
+    max-width: 60% !important;
     font-weight: 100 !important;
     font-size: 1.6rem !important;
     line-height: 2.1rem !important;
     margin-bottom: 1rem !important;
   }
   .lead {
-    max-width: 100% !important;
+    min-width: 5rem !important;
     font-weight: 100 !important;
     font-size: 1.2rem !important;
     line-height: 2.1rem !important;
@@ -61,6 +68,54 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  #subscribe {
+    justify-content: center;
+    background-color: lightblue;
+    padding: 9rem 1rem;
+    text-align: center;
+  }
+
+  .subword {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .subwork {
+    font: 1em sans-serif;
+  }
+
+  .scribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    gap: 0.4rem;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .subinput {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .subinput:focus {
+    outline: none;
+    border-color: blue;
+  }
+
+  .subbtn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
   }
 }
 
@@ -70,6 +125,20 @@
     max-width: 100% !important;
     font-size: 3rem !important;
     font-weight: 500 !important;
+  }
+  .display-4 .icon {
+    font-size: 180rem !important;
+  }
+  .topMain {
+    margin: 0 0 20px 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    background-image: url("./assets/man1.png");
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 35rem;
+    background-attachment: fixed;
   }
   .lead {
     max-width: 100% !important;
@@ -97,17 +166,97 @@
     padding: 2rem;
     background-color: #f8fafc;
   }
+  .button-group button {
+    padding: 0.9rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #subscribe {
+    justify-content: center;
+    background-color: lightblue;
+    padding: 9rem 1;
+    text-align: center;
+  }
+
+  .subword {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .subwork {
+    font: 1em sans-serif;
+  }
+
+  .scribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    gap: 0.4rem;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .subinput {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .subinput:focus {
+    outline: none;
+    border-color: blue;
+  }
+
+  .subbtn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
 }
 
 /* Desktop view */
 @media (min-width: 992px) {
   .display-4 {
-    max-width: 60% !important;
     font-size: 3.5rem !important;
-    font-weight: 600 !important;
+    font-weight: 650 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem;
+    max-width: 40rem !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .display-4 .icon {
+    font-size: 180rem !important;
+  }
+  .topMain {
+    margin: 0 0 20px 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    background-image: url("./assets/man1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 35rem;
+    background-attachment: fixed;
+  }
+  .leab {
+    font-size: 1.6rem !important;
+    font-weight: 100 !important;
+    line-height: 2.1rem !important;
+    margin-bottom: 1rem;
+    max-width: 80rem !important;
+    word-break: break-word;
   }
   .lead {
-    max-width: 100% !important;
+    min-width: 100% !important;
     font-weight: 100 !important;
     font-size: 1.4rem !important;
     line-height: 2.1rem !important;
@@ -131,5 +280,56 @@
     border-radius: 1rem;
     padding: 2rem;
     background-color: #f8fafc;
+  }
+  .button-group button {
+    padding: 0.8rem 1rem;
+    width: 14rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0.6rem;
+  }
+  #subscribe {
+    justify-content: center;
+    background-color: lightblue;
+    padding: 9rem 0;
+    text-align: center;
+  }
+  .subword {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .subwork {
+    font: 1em sans-serif;
+  }
+  .scribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    gap: 0.4rem;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .subinput {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .subinput:focus {
+    outline: none;
+    border-color: blue;
+  }
+
+  .subbtn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
   }
 }
