@@ -10,7 +10,6 @@
     align-items: start;
     padding: 1rem 0;
   }
-
   .homepage {
     max-width: 100%;
   }
@@ -25,6 +24,13 @@
   }
   .display-4 .icon {
     font-size: 180rem !important;
+  }
+  .leab {
+    max-width: 50%;
+    font-weight: 100 !important;
+    font-size: 1.6rem !important;
+    line-height: 2.1rem !important;
+    margin-bottom: 1rem !important;
   }
   .lead {
     max-width: 100% !important;
@@ -49,6 +55,12 @@
     border: 1px solid #87cefa;
     max-height: 15rem;
     background-color: #f8fafc;
+  }
+  .button-group {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
@@ -95,7 +107,7 @@
     font-weight: 600 !important;
   }
   .lead {
-    min-width: 100% !important;
+    max-width: 100% !important;
     font-weight: 100 !important;
     font-size: 1.4rem !important;
     line-height: 2.1rem !important;

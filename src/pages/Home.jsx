@@ -11,7 +11,7 @@ const Home = () => {
         <h1 className="display-4">
           Facility Management & Maintenance Procurement
         </h1>
-        <p className="lead">
+        <p className="leab">
           We help facilities manage their property and provide maintenance tools
           and systems.
         </p>
