@@ -181,7 +181,7 @@ const Home = () => {
           </button>
         </div>
         <h6 className="letter-1">
-          <input type="checkbox" name="checkbox" id="" className="me-2"/>
+          <input type="checkbox" name="checkbox" id="" className="me-1"/>
           By subscribing you agree to our{" "}
           <a href="#" className="letter-2">
             Privacy Policy

@@ -30,9 +30,9 @@ import {
   faAlignRight,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import ServiceForm from "../Forms/ServiceForm";
 
 const Navbar = () => {
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg mainNavbar">
@@ -94,9 +94,15 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <button className="btn btn-primary">
-              <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
-            </button>
+            <Link to="/serviceform" className="text-decoration-none">
+              <button
+                className="btn btn-primary"
+                type="button"
+                id="bookservice"
+              >
+                <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
