@@ -60,7 +60,16 @@
   gap: 1rem;
 }
 
-  /* flex: 1 1 calc(33.333% - 1rem); */
+#card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  /* flex: 1 1 calc(33.333% - 1rem); Three cards per row with gap */
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
 
 #serviceslist li a {
   text-decoration: none;

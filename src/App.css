@@ -88,12 +88,15 @@
     max-width: 100% !important;
     font-weight: 600 !important;
     font-size: 3rem !important;
+    word-wrap: break-word;
+    width: 90%;
   }
   .aboutlead {
     min-width: 5rem !important;
     font-weight: 100 !important;
     font-size: 1.2rem !important;
     line-height: 2.1rem !important;
+    padding: 0 1rem;
   }
   .teamImg {
     width: 5rem;
@@ -265,11 +268,11 @@
     text-align: start;
   }
 
-  .aboutlead {
-    /* font-size: 1.2rem; */
-    /* line-height: 1.5; */
-    /* margin-bottom: 1rem; */
-    /* padding: 1rem; */
+  .abouthead {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding: 1rem;
   }
 
   .values {
@@ -410,6 +413,7 @@
     font-size: 3rem !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    padding: 0 1.5rem;
   }
   .aboutlead {
     min-width: 100% !important;
