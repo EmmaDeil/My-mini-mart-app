@@ -23,35 +23,45 @@ const About = () => {
       <div className="container">
         <div className="row g-5 values">
           <div className="col rad">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Innovation</h4>
             <p>
               We embrace change and continuously seek new ways to improve our
               solutions.
             </p>
+</SpotlightCard>
           </div>
           <div className="col rad">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Integrity</h4>
             <p>We conduct our business with honesty and transparency.</p>
+</SpotlightCard>
           </div>
           <div className="col rad">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Customer Focus</h4>
             <p>
               We prioritize our clients' needs and strive to exceed their
               expectations.
             </p>
+</SpotlightCard>
           </div>
           <div className="col rad">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Collaboration</h4>
             <p>We believe in the power of teamwork and partnerships.</p>
+</SpotlightCard>
           </div>
           <div className="col rad">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
             <h4>Sustainability</h4>
             <p>We are committed to environmentally responsible practices.</p>
+</SpotlightCard>
           </div>
         </div>
       </div>
@@ -103,9 +113,9 @@ const About = () => {
         </span>
       </div>
          </div>
-<SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-  // Content goes here
-</SpotlightCard>
+{/* <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+  
+</SpotlightCard> */}
     </div>
   );
 };
