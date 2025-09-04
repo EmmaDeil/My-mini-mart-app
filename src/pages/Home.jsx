@@ -150,9 +150,8 @@ const Home = () => {
             <div className="grid-description">{stat.description}</div>
           </div>
         ))}
-        ;
       </div>
-         </div>
+        </div>
         </div>
       </div>
 
