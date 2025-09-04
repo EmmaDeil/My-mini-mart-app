@@ -517,11 +517,11 @@
     padding: 5rem 0 5rem 0;
   }
   .display-2 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 100 !important;
-    line-height: 2.1rem !important;
+    line-height: 2.5rem !important;
     margin-bottom: 1rem;
-    max-width: 45rem !important;
+    max-width: 50rem !important;
     word-break: break-word;
   }
   .services-grid {
