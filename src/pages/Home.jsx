@@ -1,6 +1,34 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faTools, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding, faTools, faUsers, faCheck, faCogs } from "@fortawesome/free-solid-svg-icons";
+
+
+const stats = [
+  {
+    icon: faBuilding,
+    value: "100+",
+    label: "Buildings Managed",
+    description: "We manage over 100 buildings across the region.",
+  },
+  {
+    icon: faTools,
+    value: "500+",
+    label: "Maintenance Tasks",
+    description: "Our team has completed over 500 maintenance tasks.",
+  },
+  {
+    icon: faUsers,
+    value: "300+",
+    label: "Clients Served",
+    description: "We have served over 300 clients in various sectors.",
+  },
+  {
+    icon: faCheck,
+    value: "99.9%",
+    label: "Uptime Success",
+    description: "Our systems have maintained 99.9% uptime.",
+  }
+];
 
 const Home = () => {
   return (
@@ -17,7 +45,7 @@ const Home = () => {
           <div className="button-group">
             <button
               type="button"
-              className="btn btn-primary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+              className="btn btn-primary"
               style={{ cursor: "pointer" }}
             >
               Book a Service
@@ -33,11 +61,20 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container my-5">
+      {/* <div className="container my-5">
         <div className="row">
           <div className="col-6 col-md-4">
             <h1>
-              <FontAwesomeIcon icon={faBuilding} style={{ color: "dodgerblue", fontSize: "4rem" }} />
+              <FontAwesomeIcon
+                icon={faBuilding}
+                style={{
+                  color: "dodgerblue",
+                  fontSize: "4rem",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              />
             </h1>
             <div className="wrap-text">
               <p>
@@ -48,7 +85,16 @@ const Home = () => {
           </div>
           <div className="col-6 col-md-4">
             <h1>
-              <FontAwesomeIcon icon={faTools} />
+              <FontAwesomeIcon
+                icon={faTools}
+                style={{
+                  color: "dodgerblue",
+                  fontSize: "4rem",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              />
             </h1>
             <div className="wrap-text">
               <p>We provide tools, spare parts and household items</p>
@@ -57,7 +103,16 @@ const Home = () => {
           <div className="col-6 col-md-4">
             <div className="wrap-text">
               <h1 className="icon">
-                <FontAwesomeIcon icon={faCogs} className="icon" />
+                <FontAwesomeIcon
+                  icon={faCogs}
+                  style={{
+                    color: "dodgerblue",
+                    fontSize: "4rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",
+                  }}
+                />
               </h1>
               <p>
                 Some long text that should wrap within the column and
@@ -66,7 +121,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container-fluid my-5">
         <div className="row">
@@ -81,90 +136,27 @@ const Home = () => {
               to your needs.
             </p>
           </div>
-          <div className="col">
-            <div className="card-body" id="card">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faBuilding}
-                  style={{
-                    color: "dodgerblue",
-                    fontSize: "4rem",
-                    margin: "1rem 0",
-                  }}
-                />
-              </div>
-              <h5 className="card-title">Our Commitment to Excellence</h5>
-              <p className="card-text">
-                We are dedicated to providing the highest quality of service and
-                support to our clients. Our team of experts is always ready to
-                assist you with your facility management needs.
-              </p>
+         <div className="col">
+      <div className="services-grid">
+        {stats.map((stat, index) => (
+          <div key={index} className="services-grid-item">
+            <div className="grid-icon">
+              <FontAwesomeIcon
+                icon={stat.icon}
+              />
             </div>
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-            <div className="card-body" id="card">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faTools}
-                  style={{
-                    color: "dodgerblue",
-                    fontSize: "4rem",
-                    margin: "1rem 0",
-                  }}
-                />
-              </div>
-              <h5 className="card-title">Expertise You Can Trust</h5>
-              <p className="card-text">
-                Our team consists of industry professionals with extensive
-                knowledge and experience in facility management.
-              </p>
-            </div>
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-            <div className="card-body" id="card">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faCogs}
-                  style={{
-                    color: "dodgerblue",
-                    fontSize: "4rem",
-                    margin: "1rem 0",
-                  }}
-                />
-              </div>
-              <h5 className="card-title">Our Commitment to Excellence</h5>
-              <p className="card-text">
-                We are dedicated to providing the highest quality of service and
-                support to our clients. Our team of experts is always ready to
-                assist you with your facility management needs.
-              </p>
-            </div>
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
+            <div className="grid-value">{stat.value}</div>
+            <div className="grid-label">{stat.label}</div>
+            <div className="grid-description">{stat.description}</div>
           </div>
+        ))}
+        ;
+      </div>
+         </div>
         </div>
       </div>
+
+
       <div className="container-fluid bg-tertiary" id="subscribe">
         <h3 className="subword">Stay Updated, Stay Connected</h3>
         <h6 className="subwork">Get Our News And Updates</h6>
@@ -181,7 +173,7 @@ const Home = () => {
           </button>
         </div>
         <h6 className="letter-1">
-          <input type="checkbox" name="checkbox" id="" className="me-1"/>
+          <input type="checkbox" name="checkbox" id="" className="me-1" />
           By subscribing you agree to our{" "}
           <a href="#" className="letter-2">
             Privacy Policy

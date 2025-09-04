@@ -162,6 +162,29 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
+  /* Footer page */
+   .footerbottom {
+    color: white;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footerbottom p {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    word-wrap: wrap;
+    font-weight: 600;
+
+  }
+   .footer-links {
+    display: flex;
+    gap: 0rem;
+    font-size: 0.9rem;
+    font-weight: 450;
+  }
 }
 
 /* Tablet view */
@@ -194,10 +217,9 @@
     max-width: 100% !important;
     font-size: 3rem !important;
     font-weight: 500 !important;
+
   }
-  .display-1 .icon {
-    font-size: 180rem !important;
-  }
+
   .topMain {
     margin: 0 0 20px 0;
     border: none;
@@ -335,6 +357,21 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
+  .footerbottom {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerbottom p {
+    margin: 0;
+    padding: 0;
+  }
+   .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 /* Desktop view */
@@ -371,9 +408,7 @@
     white-space: normal;
     word-break: break-word;
   }
-  .display-1 .icon {
-    font-size: 180rem !important;
-  }
+  
   .topMain {
     margin: 0 0 20px 0;
     border: none;
@@ -396,6 +431,51 @@
     max-width: 45rem !important;
     word-break: break-word;
   }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .services-grid-item {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+  }
+
+  .services-grid-item:hover {
+    box-shadow: var(--shadow), 0 4px 20px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s;
+  }
+
+.grid-icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: dodgerblue;
+  font-size: 3.5rem;
+}
+.grid-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.grid-label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--muted);
+ margin-bottom: 0.9rem;
+}
+.grid-description {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--muted);
+}
 
   /* About page */
   .abouthead {
