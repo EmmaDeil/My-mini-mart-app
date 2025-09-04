@@ -82,12 +82,22 @@ const Footer = () => {
               <hr className="my-4" id="footer-divider"/>
             </div>
           </div>
-          <div className="col text-center">
-            <p>
-              &copy; {new Date().getFullYear()} The Ladeil Innovation Hub. All
-              rights reserved.
-            </p>
+           <div className="footerbottom">
+          <p className="text-white">
+             &copy; {new Date().getFullYear()} The Ladeil Innovation Hub. All rights reserved.
+          </p>
+          <div className="footer-links flex space-x-4">
+            <a href="#" className="text-white text-decoration-none">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-white text-decoration-none">
+              Terms of Service
+            </a>
+            <a href="#" className="text-white text-decoration-none">
+              Cookie Policy
+            </a>
           </div>
+        </div>
         </div>
       </div>
     </div>

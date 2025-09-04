@@ -17,7 +17,7 @@ const Home = () => {
           <div className="button-group">
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-primary transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
               style={{ cursor: "pointer" }}
             >
               Book a Service

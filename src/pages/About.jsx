@@ -21,7 +21,7 @@ const About = () => {
 
       <h3 className="about-h3">Our Values</h3>
       <div className="container">
-        <div className="row g-5 values">
+        <div className="row our-values">
           <div className="col rad">
             <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <FontAwesomeIcon icon={faShieldAlt} />
