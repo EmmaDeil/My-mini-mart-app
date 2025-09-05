@@ -95,7 +95,7 @@ const About = () => {
               alt="David Emma"
               className="teamImg"
             />
-            <h4>David Emmaunel O.</h4>
+            <h6>David Emmaunel O.</h6>
             <p>
               <i>CEO</i>
             </p>
@@ -106,7 +106,7 @@ const About = () => {
               alt="John Doe"
               className="teamImg"
             />
-            <h4>John Doe</h4>
+            <h6>John Doe</h6>
             <p>
               <i>Facility Manager</i>
             </p>
@@ -118,7 +118,7 @@ const About = () => {
               className="teamImg"
             />
 
-            <h4>Jane Smith</h4>
+            <h6>Jane Smith</h6>
             <p>
               <i>Technology Specialist</i>
             </p>
@@ -129,7 +129,7 @@ const About = () => {
               alt="Emily Johnson"
               className="teamImg"
             />
-            <h4>Emily Johnson</h4>
+            <h6>Emily Johnson</h6>
             <p>
               <i>Customer Service Representative</i>
             </p>
