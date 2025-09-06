@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faTools, faUsers, faCheck } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../components/Footer/Footer";
 
 
 const stats = [
@@ -179,6 +180,7 @@ const Home = () => {
           </a>
         </h6>
       </div>
+      <Footer />
     </div>
   );
 };
