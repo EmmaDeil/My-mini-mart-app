@@ -136,6 +136,28 @@ const Home = () => {
               of your business success. We provide top-notch services tailored
               to your needs.
             </p>
+            <h3>Certified Professionals</h3>
+            <p>
+              Our team consists of certified professionals who are experts in
+              their respective fields. We ensure that all our services meet the
+              highest industry standards.
+            </p>
+            <h3>Comprehensive Services</h3>
+            <p>
+              From routine maintenance to emergency repairs, we offer a wide
+              range of facility management services to meet your needs.
+            </p>
+            <h3>Customer-Centric Approach</h3>
+            <p>
+              We prioritize our clients' satisfaction and work closely with you
+              to understand your unique needs and challenges.
+            </p>
+            <h3>24/7 Support</h3>
+            <p>
+              Our dedicated support team is available around the clock to assist
+              you with any facility management issues that may arise.
+            </p>
+            <button className="btn btn-primary">Learn About Our Process</button>
           </div>
          <div className="col">
       <div className="services-grid">
