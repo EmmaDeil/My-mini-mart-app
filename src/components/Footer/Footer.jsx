@@ -65,7 +65,35 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col">
-
+              <h6 className="section-title">Quick Links</h6>
+            <ul className="list-unstyled" id="quicklinks" style={{ fontWeight: "normal", marginTop: "0.9rem", lineHeight: "1.5", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+              <li>
+                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Our Story</a>
+              </li>
+              <li>
+                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Careers</a>
+              </li>
+              <li>
+                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Our Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <h6 className="section-title">Contact Us</h6>
+            <p className="mt-1" style={{ fontWeight: "normal" }}>
+              We'd love to hear from you! Reach out to us for any inquiries or feedback.
+            </p>
+            <ul className="list-unstyled" id="contactus" style={{ fontWeight: "normal", marginTop: "0.9rem", lineHeight: "1.5", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+              <li>
+                <a href="tel:+1234567890" style={{ color: "inherit", textDecoration: "none" }}>Phone: +1 (234) 567-890</a>
+              </li>
+              <li>
+                <a href="mailto:info@ladiel.com" style={{ color: "inherit", textDecoration: "none" }}>Email: info@ladiel.com</a>
+              </li>
+              <li>
+                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Address: 123 Main St, City, Country</a>
+              </li>
+            </ul>
           </div>
           <div className="col">
             <h6 className="section-title">Download Our App</h6>

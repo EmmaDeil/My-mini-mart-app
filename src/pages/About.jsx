@@ -2,6 +2,7 @@ import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import SpotlightCard from "../components/SpotlightCard";
+import UserCard from "../components/UserCard";
 
 const About = () => {
   return (
@@ -139,6 +140,38 @@ const About = () => {
       {/* <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
   
 </SpotlightCard> */}
+      <div
+        className="user-cards-container"
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          flexWrap: "wrap",
+          padding: "15px",
+        }}
+      >
+        <UserCard
+          name="Alice Johnson"
+          age={28}
+          role="Frontend Developer"
+          avatar="./src/assets/man1.png"
+          isOnline={true}
+        />
+        <UserCard
+          name="Bob Smith"
+          age={35}
+          role="Backend Developer"
+          avatar="https://i.pravatar.cc/150?img=2"
+          isOnline={false}
+        />
+        <UserCard
+          name="Carol Davis"
+          age={31}
+          role="UI/UX Designer"
+          avatar="https://i.pravatar.cc/150?img=3"
+          isOnline={true}
+        />
+      </div>
+      
     </div>
   );
 };
