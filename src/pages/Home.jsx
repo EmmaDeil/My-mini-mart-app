@@ -1,8 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faTools, faUsers, faCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faTools,
+  faUsers,
+  faCheck,
+  faAward,
+  faTransgenderAlt,
+  faTableCellsRowUnlock,
+} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer/Footer";
-
 
 const stats = [
   {
@@ -28,7 +35,7 @@ const stats = [
     value: "99.9%",
     label: "Uptime Success",
     description: "Our systems have maintained 99.9% uptime.",
-  }
+  },
 ];
 
 const Home = () => {
@@ -127,57 +134,133 @@ const Home = () => {
       <div className="container-fluid my-5">
         <div className="row">
           <div className="col">
-            <h3>
-              Why Choose Ladeil Innovation for your facility management needs?
+            <h3 className="fs-1 fw-bold text-dark">
+              Why Choose Ladeil Innovation for your FM needs?
             </h3>
-            <p>
+            <p className="fs-5 text-muted">
               With over 10 years of experience in the industry, we understand
               that your building is more than just a space—it's the foundation
               of your business success. We provide top-notch services tailored
               to your needs.
             </p>
-            <h3>Certified Professionals</h3>
-            <p>
-              Our team consists of certified professionals who are experts in
-              their respective fields. We ensure that all our services meet the
-              highest industry standards.
-            </p>
-            <h3>Comprehensive Services</h3>
-            <p>
-              From routine maintenance to emergency repairs, we offer a wide
-              range of facility management services to meet your needs.
-            </p>
-            <h3>Customer-Centric Approach</h3>
-            <p>
-              We prioritize our clients' satisfaction and work closely with you
-              to understand your unique needs and challenges.
-            </p>
-            <h3>24/7 Support</h3>
-            <p>
-              Our dedicated support team is available around the clock to assist
-              you with any facility management issues that may arise.
-            </p>
+            <div className="d-flex align-items-start gap-4">
+              <div
+                className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 bg-outline"
+                style={{
+                  width: "3rem",
+                  height: "3rem",
+                  backgroundColor: "rgba(13, 110, 253, 0.1)",
+                }}
+              >
+                <FontAwesomeIcon icon={faAward} />
+              </div>
+              <div>
+                <h3 className="text-dark fs-4 fw-semibold">
+                  Certified Professionals
+                </h3>
+                <p className="text-muted">
+                  Our team consists of certified professionals who are experts
+                  in their respective fields. We ensure that all our services
+                  meet the highest industry standards.
+                </p>
+              </div>
+            </div>
+            <div className="d-flex align-items-start gap-4">
+              <div
+                className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 bg-outline"
+                style={{
+                  width: "3rem",
+                  height: "3rem",
+                  backgroundColor: "rgba(13, 110, 253, 0.1)",
+                }}
+              >
+                <FontAwesomeIcon icon={faTransgenderAlt} />
+              </div>
+              <div>
+                <h3 className="text-dark fs-4 fw-semibold">
+                  Comprehensive Services
+                </h3>
+                <p className="text-muted">
+                  From routine maintenance to emergency repairs, we offer a wide
+                  range of facility management services to meet your needs.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex align-items-start gap-4">
+              <div
+                className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 bg-outline"
+                style={{
+                  width: "3rem",
+                  height: "3rem",
+                  backgroundColor: "rgba(13, 110, 253, 0.1)",
+                }}
+              >
+                <FontAwesomeIcon icon={faUsers} />
+              </div>
+              <div>
+                <h3 className="text-dark fs-4 fw-semibold">
+                  Customer-Centric Approach
+                </h3>
+                <p className="text-muted">
+                  We prioritize our clients' satisfaction and work closely with
+                  you to understand your unique needs and challenges.
+                </p>
+              </div>
+            </div>
+            <div className="d-flex align-items-start gap-4">
+              <div
+                className="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 bg-outline"
+                style={{
+                  width: "3rem",
+                  height: "3rem",
+                  backgroundColor: "rgba(13, 110, 253, 0.1)",
+                }}
+              >
+                <FontAwesomeIcon icon={faTableCellsRowUnlock} />
+              </div>
+              <div>
+                <h3 className="text-dark fs-4 fw-semibold">24/7 Support</h3>
+                <p className="text-muted">
+                  Our dedicated support team is available around the clock to
+                  assist you with any facility management issues that may arise.
+                </p>
+              </div>
+            </div>
             <button className="btn btn-primary">Learn About Our Process</button>
           </div>
-         <div className="col">
-      <div className="services-grid">
-        {stats.map((stat, index) => (
-          <div key={index} className="services-grid-item">
-            <div className="grid-icon">
-              <FontAwesomeIcon
-                icon={stat.icon}
-              />
+          <div className="col">
+            <div className="services-grid">
+              {stats.map((stat, index) => (
+                <div key={index} className="services-grid-item">
+                  <div
+                    className="grid-icon d-flex align-items-center justify-content-center rounded-4 mx-auto mb-4"
+                    style={{
+                      width: "4rem",
+                      height: "4rem",
+                      backgroundColor: "rgba(13, 110, 253, 0.1)",
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={stat.icon}
+                      className="w-8 h-8 text-primary"
+                    />
+                  </div>
+                  <div className="grid-value fs-1 fw-bold text-primary mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="grid-label fs-5 fw-semibold text-dark mb-1">
+                    {stat.label}
+                  </div>
+                  <div className="grid-description fs-6 text-muted">
+                    {stat.description}
+                  </div>
+                </div>
+              ))}
             </div>
-            <div className="grid-value">{stat.value}</div>
-            <div className="grid-label">{stat.label}</div>
-            <div className="grid-description">{stat.description}</div>
           </div>
-        ))}
-      </div>
-        </div>
         </div>
       </div>
-
 
       <div className="container-fluid bg-tertiary" id="subscribe">
         <h3 className="subword">Stay Updated, Stay Connected</h3>
