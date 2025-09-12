@@ -227,9 +227,9 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <button className="btn btn-primary">Learn About Our Process</button>
+            <button className="btn btn-primary mb-3 mt-3">Learn About Our Process</button>
           </div>
-          <div className="col">
+          <div className="col mt-3">
             <div className="services-grid">
               {stats.map((stat, index) => (
                 <div key={index} className="services-grid-item">

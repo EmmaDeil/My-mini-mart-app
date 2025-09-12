@@ -29,6 +29,7 @@ import {
   faConciergeBell,
   faAlignRight,
   faEnvelope,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import ServiceForm from "../Forms/ServiceForm";
 
@@ -88,7 +89,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/partners">
                   <span className="icon-container me-2">
-                    <FontAwesomeIcon icon={faInfoCircle} />
+                    <FontAwesomeIcon icon={faUsers} />
                   </span>
                   Our Partners
                 </Link>
