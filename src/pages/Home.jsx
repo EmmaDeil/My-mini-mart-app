@@ -177,7 +177,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container-fluid bg-tertiary" id="subscribe">
+      <div className="container-fluid bg-light" id="subscribe">
         <h3 className="subword">Stay Updated, Stay Connected</h3>
         <h6 className="subwork">Get Our News And Updates</h6>
         <div className="scribe">
