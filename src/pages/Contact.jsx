@@ -241,7 +241,7 @@ const Contact = () => {
                 className="card text-white"
                 style={{
                   background:
-                    "linear-gradient(135deg, #007bff 0%, #0056b3 100%)",
+                    "#063580",
                 }}
               >
                 <div className="card-body p-4 text-center">
