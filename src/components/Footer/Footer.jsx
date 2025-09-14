@@ -33,34 +33,34 @@ const Footer = () => {
             </div>
           </div>
           <div className="col">
-            <h6 className="section-title">Our Services</h6>
-            <p className="mt-1" style={{ fontWeight: "normal" }}>
+            <h6 className="section-title mb-3">Our Services</h6>
+            {/* <p className="mt-1" style={{ fontWeight: "normal" }}>
               We offer a wide range of services to meet your needs.
-            </p>
-            <ul className="list-unstyled" id="serviceslist">
-              <li >
-                <a href="#">Facility Management</a>
+            </p> */}
+            <ul className="list-unstyled" id="" style={{display: "flex", flexDirection:"column", alignItems: "start"}}>
+              {/* <li >
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Facility Management</a>
+              </li> */}
+              <li>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Property Maintenance</a>
               </li>
               <li>
-                <a href="#">Property Maintenance</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Cleaning Services</a>
               </li>
               <li>
-                <a href="#">Cleaning Services</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Security Services</a>
               </li>
               <li>
-                <a href="#">Security Services</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Landscaping</a>
               </li>
               <li>
-                <a href="#">Landscaping</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Consulting</a>
               </li>
               <li>
-                <a href="#">Consulting</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Project Management</a>
               </li>
               <li>
-                <a href="#">Project Management</a>
-              </li>
-              <li>
-                <a href="#">Procurement & Sourcing</a>
+                <a href="#" style={{textDecoration: "none", color: "White"}}>Procurement & Sourcing</a>
               </li>
             </ul>
           </div>
