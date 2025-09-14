@@ -10,6 +10,8 @@ import {
   faTableCellsRowUnlock,
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer/Footer";
+import Hero from "./Hero";
+import Services from "./Services";
 
 const stats = [
   {
@@ -41,95 +43,8 @@ const stats = [
 const Home = () => {
   return (
     <div>
-      <div className="container-fluid topMain">
-        <div className="row">
-          <h1 className="display-1">
-            Facility Management & Maintenance Procurement
-          </h1>
-          <p className="display-2">
-            We help facilities manage their property and provide maintenance
-            tools and systems.
-          </p>
-          <div className="button-group">
-            <button
-              type="button"
-              className="btn btn-primary"
-              style={{ cursor: "pointer" }}
-            >
-              Book a Service
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-dark"
-              style={{ cursor: "pointer" }}
-            >
-              Visit Marketplace
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="container my-5">
-        <div className="row">
-          <div className="col-6 col-md-4">
-            <h1>
-              <FontAwesomeIcon
-                icon={faBuilding}
-                style={{
-                  color: "dodgerblue",
-                  fontSize: "4rem",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              />
-            </h1>
-            <div className="wrap-text">
-              <p>
-                We offer a wide range of facility management services from
-                buildings, estates and offices.
-              </p>
-            </div>
-          </div>
-          <div className="col-6 col-md-4">
-            <h1>
-              <FontAwesomeIcon
-                icon={faTools}
-                style={{
-                  color: "dodgerblue",
-                  fontSize: "4rem",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              />
-            </h1>
-            <div className="wrap-text">
-              <p>We provide tools, spare parts and household items</p>
-            </div>
-          </div>
-          <div className="col-6 col-md-4">
-            <div className="wrap-text">
-              <h1 className="icon">
-                <FontAwesomeIcon
-                  icon={faCogs}
-                  style={{
-                    color: "dodgerblue",
-                    fontSize: "4rem",
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "100%",
-                  }}
-                />
-              </h1>
-              <p>
-                Some long text that should wrap within the column and
-                demonstrate the CSS properties applied.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      <Hero />
+      <Services />
 
       <div className="container-fluid my-5">
         <div className="row">
