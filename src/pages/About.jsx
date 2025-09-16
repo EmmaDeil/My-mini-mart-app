@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import SpotlightCard from "../components/SpotlightCard";
 import UserCard from "../components/UserCard";
+import { Handshake } from "lucide-react";
 
 const About = () => {
   return (
@@ -64,7 +65,7 @@ const About = () => {
               className="custom-spotlight-card"
               spotlightColor="rgba(0, 229, 255, 0.2)"
             >
-              <FontAwesomeIcon icon={faShieldAlt} />
+              <Handshake />
               <h4>Collaboration</h4>
               <p>We believe in the power of teamwork and partnerships.</p>
             </SpotlightCard>

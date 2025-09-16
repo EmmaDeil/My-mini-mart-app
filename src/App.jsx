@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import ServiceForm from "./components/Forms/ServiceForm";
+import Careers from "./pages/Careers";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               {/* <Route path="/login" element={<LoginForm />} /> */}
-              {/* <Route path="/careers" element={<Careers />} /> */}
+              <Route path="/careers" element={<Careers />} />
               <Route path="/serviceform" element={<ServiceForm />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -68,13 +69,13 @@ const Footer = () => {
               <h6 className="section-title">Quick Links</h6>
             <ul className="list-unstyled" id="quicklinks" style={{ fontWeight: "normal", marginTop: "0.9rem", lineHeight: "1.5", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
               <li>
-                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Our Story</a>
+                <Link to="/our-story" style={{ color: "inherit", textDecoration: "none" }}>Our Story</Link>
               </li>
               <li>
-                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Careers</a>
+                <Link to="/careers" style={{ color: "inherit", textDecoration: "none" }}>Careers</Link>
               </li>
               <li>
-                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Our Blog</a>
+                <Link to="/blog" style={{ color: "inherit", textDecoration: "none" }}>Our Blog</Link>
               </li>
             </ul>
           </div>
