@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuilding,
@@ -52,7 +53,7 @@ const Home = () => {
     return emailRegex.test(email);
   };
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
 
     // Reset previous errors
@@ -74,10 +75,28 @@ const Home = () => {
       return;
     }
 
-    // Simulate subscription process
+    // Start loading state
     setSubscribeStatus("loading");
 
-    setTimeout(() => {
+    try {
+      // Send notification email to yourself using EmailJS
+      const templateParams = {
+        to_email: "ladeil.innovations@gmail.com",
+        subscriber_email: email,
+        subscription_date: new Date().toLocaleString(),
+        message: `New subscription received from: ${email}`,
+        subject: "New Newsletter Subscription - Ladeil Innovations",
+      };
+
+      // Replace these with your actual EmailJS credentials
+      await emailjs.send(
+        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        templateParams,
+        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+      );
+
+      // Success state
       setSubscribeStatus("success");
       setEmail("");
       setIsAgreed(false);
@@ -86,7 +105,17 @@ const Home = () => {
       setTimeout(() => {
         setSubscribeStatus("");
       }, 3000);
-    }, 1000);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setSubscribeStatus("error");
+      setEmailError("Failed to subscribe. Please try again.");
+
+      // Reset error state after 3 seconds
+      setTimeout(() => {
+        setSubscribeStatus("");
+        setEmailError("");
+      }, 3000);
+    }
   };
   return (
     <div>
@@ -245,12 +274,21 @@ const Home = () => {
                   Stay Updated, Stay Connected
                 </h3>
               </div>
-              <h6 className="fs-5 text-muted mb-4 mt-3">Get Our News And Updates</h6>
+              <h6 className="fs-5 text-muted mb-4 mt-3">
+                Get Our News And Updates
+              </h6>
 
               {subscribeStatus === "success" && (
                 <div className="alert alert-success mb-4" role="alert">
                   <FontAwesomeIcon icon={faCheck} className="me-2" />
                   Thank you for subscribing! You'll receive our latest updates.
+                </div>
+              )}
+
+              {subscribeStatus === "error" && (
+                <div className="alert alert-danger mb-4" role="alert">
+                  <FontAwesomeIcon icon={faCheck} className="me-2" />
+                  Oops! Something went wrong. Please try again.
                 </div>
               )}
 

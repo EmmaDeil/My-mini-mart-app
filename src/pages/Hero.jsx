@@ -3,6 +3,8 @@ import heroImage from "../assets/facility-hero.jpg";
 import ElectManage from "../assets/man1.png";
 import HeroManage from "../assets/img1.jpg";
 import CleanManage from "../assets/img3.jpg";
+import { Link } from "react-router-dom";
+import Market from "../pages/Market";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -79,19 +81,19 @@ const Hero = () => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="d-flex flex-column flex-sm-row gap-3">
-                <button className="btn btn-primary btn-lg">
-                  Book A Service Today
-                  <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
-                </button>
-                <button className="btn btn-outline-secondary btn-lg">
-                  Visit Marketplace
-                </button>
-              </div>
-            </div>
-          </div>
+                      <div className="d-flex flex-column flex-sm-row gap-3">
+                      <button className="btn btn-primary btn-lg">
+                        Book A Service Today
+                        <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                      </button>
+                      <Link to="/market" className="btn btn-outline-secondary btn-lg">
+                        Visit Marketplace
+                      </Link>
+                      </div>
+                    </div>
+                    </div>
 
-          {/* Hero Image */}
+                    {/* Hero Image */}
           <div className="col-lg-6">
             <div className="position-relative">
               <div className="position-relative rounded-4 overflow-hidden shadow-lg">

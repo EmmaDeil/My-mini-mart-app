@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import ServiceForm from "./components/Forms/ServiceForm";
 import Careers from "./pages/Careers";
+import Market from "./pages/Market";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/market" element={<Market />} />
               {/* <Route path="/login" element={<LoginForm />} /> */}
               <Route path="/careers" element={<Careers />} />
               <Route path="/serviceform" element={<ServiceForm />} />
