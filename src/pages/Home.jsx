@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuilding,
@@ -8,6 +8,7 @@ import {
   faAward,
   faTransgenderAlt,
   faTableCellsRowUnlock,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer/Footer";
 import Hero from "./Hero";
@@ -41,6 +42,52 @@ const stats = [
 ];
 
 const Home = () => {
+  const [email, setEmail] = useState("");
+  const [isAgreed, setIsAgreed] = useState(false);
+  const [subscribeStatus, setSubscribeStatus] = useState(""); // 'loading', 'success', 'error'
+  const [emailError, setEmailError] = useState("");
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+
+    // Reset previous errors
+    setEmailError("");
+
+    // Validation
+    if (!email.trim()) {
+      setEmailError("Email is required");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }
+
+    if (!isAgreed) {
+      setEmailError("Please agree to the Privacy Policy");
+      return;
+    }
+
+    // Simulate subscription process
+    setSubscribeStatus("loading");
+
+    setTimeout(() => {
+      setSubscribeStatus("success");
+      setEmail("");
+      setIsAgreed(false);
+
+      // Reset success message after 3 seconds
+      setTimeout(() => {
+        setSubscribeStatus("");
+      }, 3000);
+    }, 1000);
+  };
   return (
     <div>
       <Hero />
@@ -142,7 +189,9 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <button className="btn btn-primary mb-3 mt-3">Learn About Our Process</button>
+            <button className="btn btn-primary mb-3 mt-3">
+              Learn About Our Process
+            </button>
           </div>
           <div className="col mt-3">
             <div className="services-grid">
@@ -177,28 +226,102 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container-fluid bg-light" id="subscribe">
-        <h3 className="subword">Stay Updated, Stay Connected</h3>
-        <h6 className="subwork">Get Our News And Updates</h6>
-        <div className="scribe">
-          <input
-            type="email"
-            name=""
-            id="email"
-            placeholder="Enter your email"
-            className="subinput"
-          />
-          <button type="submit" className="btn btn-primary subbtn">
-            Subscribe
-          </button>
+      <div className="container-fluid bg-light py-5 mt-5 mb-5" id="subscribe">
+        <div className="container">
+          <div className="row justify-content-center py-5 mb-5">
+            <div className="col-lg-8 text-center">
+              <div className="d-flex align-items-center justify-content-center mb-4">
+                <div
+                  className="d-flex align-items-center justify-content-center rounded-3 me-3"
+                  style={{
+                    width: "3rem",
+                    height: "3rem",
+                    backgroundColor: "rgba(13, 110, 253, 0.1)",
+                  }}
+                >
+                  <FontAwesomeIcon icon={faEnvelope} className="text-primary" />
+                </div>
+                <h3 className="fs-2 fw-bold text-dark mb-3 mt-3">
+                  Stay Updated, Stay Connected
+                </h3>
+              </div>
+              <h6 className="fs-5 text-muted mb-4 mt-3">Get Our News And Updates</h6>
+
+              {subscribeStatus === "success" && (
+                <div className="alert alert-success mb-4" role="alert">
+                  <FontAwesomeIcon icon={faCheck} className="me-2" />
+                  Thank you for subscribing! You'll receive our latest updates.
+                </div>
+              )}
+
+              <form onSubmit={handleSubscribe} className="mb-4">
+                <div className="row g-3 justify-content-center align-items-start">
+                  <div className="col-md-6">
+                    <div className="position-relative">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email"
+                        className={`form-control form-control-lg ${
+                          emailError ? "is-invalid" : ""
+                        }`}
+                        disabled={subscribeStatus === "loading"}
+                      />
+                      {emailError && (
+                        <div className="invalid-feedback text-start">
+                          {emailError}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="col-md-auto">
+                    <button
+                      type="submit"
+                      className="btn btn-primary btn-lg px-4"
+                      disabled={subscribeStatus === "loading"}
+                    >
+                      {subscribeStatus === "loading" ? (
+                        <>
+                          <span
+                            className="spinner-border spinner-border-sm me-2"
+                            role="status"
+                            aria-hidden="true"
+                          ></span>
+                          Subscribing...
+                        </>
+                      ) : (
+                        "Subscribe"
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div className="form-check d-flex justify-content-center align-items-center">
+                <input
+                  type="checkbox"
+                  className="form-check-input me-2"
+                  id="privacyCheck"
+                  checked={isAgreed}
+                  onChange={(e) => setIsAgreed(e.target.checked)}
+                />
+                <label
+                  className="form-check-label fs-6 text-muted"
+                  htmlFor="privacyCheck"
+                >
+                  By subscribing you agree to our{" "}
+                  <a
+                    href="#"
+                    className="text-primary text-decoration-underline"
+                  >
+                    Privacy Policy
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-        <h6 className="letter-1">
-          <input type="checkbox" name="checkbox" id="" className="me-1" />
-          By subscribing you agree to our{" "}
-          <a href="#" className="letter-2">
-            Privacy Policy
-          </a>
-        </h6>
       </div>
       <Footer />
     </div>

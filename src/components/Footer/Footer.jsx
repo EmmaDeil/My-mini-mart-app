@@ -86,13 +86,13 @@ const Footer = () => {
             </p>
             <ul className="list-unstyled" id="contactus" style={{ fontWeight: "normal", marginTop: "0.9rem", lineHeight: "1.5", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
               <li>
-                <a href="tel:+1234567890" style={{ color: "inherit", textDecoration: "none" }}>Phone: +1 (234) 567-890</a>
+                <a href="tel:+2348147677695" style={{ color: "inherit", textDecoration: "none" }}>+234 814 767 7695</a>
               </li>
               <li>
-                <a href="mailto:info@ladiel.com" style={{ color: "inherit", textDecoration: "none" }}>Email: info@ladiel.com</a>
+                <a href="mailto:ladeil.innovations@gmail.com" style={{ color: "inherit", textDecoration: "none" }}>ladeil.innovations@gmail.com</a>
               </li>
               <li>
-                <a href="#" style={{ color: "inherit", textDecoration: "none" }}>Address: 123 Main St, City, Country</a>
+                <a href="#" style={{ color: "inherit", textDecoration: "none", fontSize: "0.8rem" }}>4, Otun Street, Off Fatai Kadiri, Shomolu, Lagos</a>
               </li>
             </ul>
           </div>
