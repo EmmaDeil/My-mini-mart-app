@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductCard from "../components/ProductCard";
 
-const Market = ({ price }) => {
+const Market = () => {
+  const [cart, setCart] = useState([]);
+
+  const products = [
+    {
+      id: 1,
+      name: "Beauty Chocolate Book",
+      price: 20000,
+      image: "testimg.jpg",
+    },
+    {
+      id: 2,
+      name: "Organic Face Cream",
+      price: 15000,
+      image: "testimg.jpg",
+    },
+  ];
+
+  const handleAddToCart = (product) => {
+    setCart([...cart, product]);
+    alert(`Added ${product.name} to cart!`);
+  };
+
   return (
-    <div>
-      <div className="card text-center m-5" style={{width: "18rem"}}>
-        <img src="testimg.jpg" alt="" className="card-img-top" />
-        <div className="card-body">
-          <p className="card-text" style={{fontWeight: "bold", display: "flex", alignItems: "flex-start"}}>Beauty Chocolate Book</p>
-          <div className="card-title" style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-            <h3>#20,000</h3>
-            <div className="card-text d-flex justify-content-end align-items-end gap-3">
-              <button>+</button>
-              <h3>{price}</h3>
-              <button>-</button>
-            </div>
-          </div>
-            <button className="btn btn-primary w-100 mt-3 mb-1">Add to Cart</button>
-        </div>
+    <div className="container py-5">
+      {/* <h2 className="text-center mb-4">Market</h2> */}
+      <div className="row">
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            onAddToCart={handleAddToCart}
+          />
+        ))}
       </div>
     </div>
   );
