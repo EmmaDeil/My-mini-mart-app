@@ -1,28 +1,5 @@
-{
-  /* <div className="d-flex align-items-center" role="search">
-                     {showSearch && (     
-                      <input
-                         className="form-control me-2"
-                         type="search"
-                         placeholder="Search"
-                         aria-label="Search"
-                         autoFocus
-                         style={{ transition: 'width 0.3s' }}
-                      />
-                   )}
-                   <button
-                      className="btn btn-outline-success"
-                      type="button"
-                      onClick={() => setShowSearch((prev) => !prev)}
-                   >
-                      Search
-                   </button>
-                </div> */
-}
-// const [showSearch, setShowSearch] = React.useState(false);
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInfoCircle,
@@ -63,36 +40,52 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <NavLink
+                  className="nav-link"
+                  to="/about"
+                  style={({ isActive }) => ({
+                    color: isActive ? "#0090fc" : "#333",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}
+                >
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faInfoCircle} />
                   </span>
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/services">
+                <NavLink className="nav-link" to="/services" style={({ isActive }) => ({
+                    color: isActive ? "#0090fc" : "#333",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faConciergeBell} />
                   </span>
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <NavLink className="nav-link" to="/contact" style={({ isActive }) => ({
+                    color: isActive ? "#0090fc" : "#333",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </span>
                   Contact
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/partners">
+                <NavLink className="nav-link" to="/partners" style={({ isActive }) => ({
+                    color: isActive ? "#0090fc" : "#333",
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faUsers} />
                   </span>
                   Our Partners
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <Link to="/serviceform" className="text-decoration-none">
@@ -101,7 +94,7 @@ const Navbar = () => {
                 type="button"
                 id="bookservice"
               >
-                <FontAwesomeIcon icon={faConciergeBell} /> Book a Service
+                <FontAwesomeIcon icon={faConciergeBell} /> Leave a Feedback
               </button>
             </Link>
           </div>
