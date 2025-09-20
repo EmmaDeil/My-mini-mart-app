@@ -93,7 +93,20 @@
     font-size: 1.2rem !important;
     line-height: 2.1rem !important;
     padding: 0 1rem;
+    animation: Lead 4s ease-in;
   }
+
+  @keyframes Lead {
+     0%{
+      scale: 200%;
+      translate: 150vw 0;
+    }
+    100% {
+      scale: 100%;
+      translate: 0 0;
+    }
+  }
+
   .teamImg {
     width: 5rem;
     height: 5rem;
@@ -241,6 +254,23 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+  
+  .aboutlead {
+    margin: 1rem;
+    animation: Lead 4s ease-in;
+  }
+
+  @keyframes Lead {
+     0%{
+      scale: 200%;
+      translate: 150vw 0;
+    }
+    100% {
+      scale: 100%;
+      translate: 0 0;
+    }
+  }
+
   .about-h3 {
     font-size: 2.5rem !important;
     margin-top: 2rem !important;
@@ -375,7 +405,7 @@
   .nav-link {
     font-size: 1rem !important;
     font-weight: 200 !important;
-    text-transform: capitalize !important;
+    /* text-transform: capitalize !important; */
   }
   ul {
     margin-left: auto;
@@ -446,7 +476,18 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
     padding: 0 1.5rem;
+    animation: Head 3s ease-in alternate;
   }
+
+  @keyframes Head {
+    0% {
+      scale: 100%;
+    }
+    100% {
+      scale: 50%;
+    }
+  }
+
   .aboutlead {
     min-width: 100% !important;
     font-weight: 100 !important;
@@ -455,7 +496,20 @@
     margin-bottom: 2rem;
     padding: 1rem 1rem 2rem 1rem;
     hyphens: auto;
+    animation: Lead 4s ease-in;
   }
+
+  @keyframes Lead {
+    0%{
+      scale: 200%;
+      translate: 150vw 0;
+    }
+    100% {
+      scale: 100%;
+      translate: 0 0;
+    }
+  }
+
   .about-h3 {
     font-size: 2.5rem !important;
     margin-top: 2rem !important;

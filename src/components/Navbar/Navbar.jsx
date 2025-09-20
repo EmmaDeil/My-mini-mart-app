@@ -46,6 +46,7 @@ const Navbar = () => {
                   style={({ isActive }) => ({
                     color: isActive ? "#0090fc" : "#333",
                     fontWeight: isActive ? "bold" : "normal",
+                    textTransform: isActive ? "uppercase" : "capitalize"
                   })}
                 >
                   <span className="icon-container me-2">
@@ -58,6 +59,7 @@ const Navbar = () => {
                 <NavLink className="nav-link" to="/services" style={({ isActive }) => ({
                     color: isActive ? "#0090fc" : "#333",
                     fontWeight: isActive ? "bold" : "normal",
+                    textTransform: isActive ? "uppercase" : "capitalize"
                   })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faConciergeBell} />
@@ -69,6 +71,7 @@ const Navbar = () => {
                 <NavLink className="nav-link" to="/contact" style={({ isActive }) => ({
                     color: isActive ? "#0090fc" : "#333",
                     fontWeight: isActive ? "bold" : "normal",
+                    textTransform: isActive ? "uppercase" : "capitalize"
                   })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faEnvelope} />
@@ -80,6 +83,7 @@ const Navbar = () => {
                 <NavLink className="nav-link" to="/partners" style={({ isActive }) => ({
                     color: isActive ? "#0090fc" : "#333",
                     fontWeight: isActive ? "bold" : "normal",
+                    textTransform: isActive ? "uppercase" : "capitalize"
                   })}>
                   <span className="icon-container me-2">
                     <FontAwesomeIcon icon={faUsers} />

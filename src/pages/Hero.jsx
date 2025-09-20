@@ -17,7 +17,7 @@ const Hero = () => {
       }}
     >
       <div
-        className="container mx-auto px-4"
+        className="container-fluid mx-auto px-4"
         style={{ paddingTop: "5rem", paddingBottom: "5rem" }}
       >
         <div className="row g-5 align-items-center">
@@ -34,7 +34,7 @@ const Hero = () => {
                   Comprehensive facility management services that keep your
                   business running smoothly. From procurement to maintenance and security, we
                   handle it all with professional excellence, helping facilities
-                  provide maintenance tools and systems.
+                  provide maintenance tools and systems. 
                 </p>
               </div>
 
