@@ -172,7 +172,6 @@ const About = () => {
           isOnline={true}
         />
       </div>
-      
     </div>
   );
 };
