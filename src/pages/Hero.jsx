@@ -3,6 +3,7 @@ import heroImage from "../assets/facility-hero.jpg";
 import ElectManage from "../assets/man1.png";
 import HeroManage from "../assets/img1.jpg";
 import CleanManage from "../assets/img3.jpg";
+import RealEstate from "../assets/real-estate.webp"
 import { Link } from "react-router-dom";
 import Market from "../pages/Market";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -126,6 +127,14 @@ const Hero = () => {
                    <div className="carousel-item">
                      <img
                        src={CleanManage}
+                       alt="Professional facility management services"
+                       className="d-block w-100"
+                       style={{ height: "600px", objectFit: "cover" }}
+                     />
+                   </div>
+                   <div className="carousel-item">
+                     <img
+                       src={RealEstate}
                        alt="Professional facility management services"
                        className="d-block w-100"
                        style={{ height: "600px", objectFit: "cover" }}
