@@ -9,18 +9,18 @@ const TeamSection = () => {
       position: "CEO",
       image: "/src/assets/CEO.jpg",
       socialLinks: {
-        facebook: "https://facebook.com/david",
-        twitter: "https://twitter.com/david",
-        instagram: "https://instagram.com/david",
-        linkedin: "https://linkedin.com/in/david",
-        youtube: "https://youtube.com/@david",
+        facebook: "https://web.facebook.com/Daves980",
+        twitter: "https://x.com/SirDeil",
+        instagram: "https://www.instagram.com/sir_deil/",
+        linkedin: "https://www.linkedin.com/in/david-emmanuel-39992a1a0/",
+      //   youtube: "https://youtube.com/@david",
       },
     },
     {
       id: 2,
       name: "Sarah Johnson",
-      position: "CTO",
-      image: "/src/assets/man1.png",
+      position: "Co-Founder",
+      // image: "/src/assets/man1.png",
       socialLinks: {
         linkedin: "https://linkedin.com/in/sarah",
         twitter: "https://twitter.com/sarah",
@@ -30,7 +30,7 @@ const TeamSection = () => {
       id: 3,
       name: "Mike Chen",
       position: "Head of Operations",
-      image: "/src/assets/man1.png",
+      // image: "/src/assets/man1.png",
       socialLinks: {
         linkedin: "https://linkedin.com/in/mike",
         instagram: "https://instagram.com/mike",
@@ -40,7 +40,7 @@ const TeamSection = () => {
       id: 4,
       name: "Emma Wilson",
       position: "Marketing Director",
-      image: "/src/assets/man1.png",
+      // image: "/src/assets/man1.png",
       socialLinks: {
         facebook: "https://facebook.com/emma",
         instagram: "https://instagram.com/emma",

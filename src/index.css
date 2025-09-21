@@ -58,15 +58,7 @@
   gap: 1rem;
 }
 
-#card {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  /* flex: 1 1 calc(33.333% - 1rem); Three cards per row with gap */
-  box-sizing: border-box;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+
 
 #serviceslist li a {
   text-decoration: none;
@@ -108,7 +100,7 @@
 .team-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.3s ease;
 }
 
@@ -124,8 +116,8 @@
   right: 0;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   color: white;
-  padding: 1.5rem;
-  transform: translateY(70%);
+  padding: 0.5rem;
+  transform: translateY(40%);
   transition: transform 0.4s ease-in-out;
 }
 
@@ -134,20 +126,18 @@
 }
 
 .overlay-content {
-  text-align: center;
+  text-align: left;
 }
 
 .member-name {
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 2rem;
   color: white;
 }
 
 .member-position {
   font-style: italic;
   color: #87ceeb;
-  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 
@@ -157,7 +147,6 @@
   justify-content: center;
   gap: 0.75rem;
   flex-wrap: wrap;
-  margin-top: 0.2rem;
 }
 
 .social-icon {
