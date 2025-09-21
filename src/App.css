@@ -116,6 +116,13 @@
     background-color: #f8fafc;
     margin: 1rem 1rem;
   }
+    .align-self-start,
+  .align-self-center,
+  .align-self-end {
+    align-self: stretch !important;
+    margin-bottom: 1rem;
+  }
+
   #subscribe {
     justify-content: center;
     background-color: lightblue;

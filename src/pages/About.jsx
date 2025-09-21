@@ -1,10 +1,10 @@
-import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
+// import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import SpotlightCard from "../components/SpotlightCard";
 import { Handshake } from "lucide-react";
 import TeamSection from "./TeamSection";
-
+import VerticalAlign from "../components/VerticalAlign";
 
 const About = () => {
   return (
@@ -21,9 +21,8 @@ const About = () => {
         technology. We are a company focused on delivering innovative solutions
         to our clients.
       </p>
-
       <h3 className="about-h3">Our Values</h3>
-      <div className="container">
+      {/* <div className="container">
         <div className="row our-values">
           <div className="col rad">
             <SpotlightCard
@@ -82,9 +81,10 @@ const About = () => {
             </SpotlightCard>
           </div>
         </div>
-      </div>
-
-       <TeamSection />
+      </div> */}
+      <VerticalAlign  />
+      {/* Team Section */}
+      <TeamSection />
     </div>
   );
 };
