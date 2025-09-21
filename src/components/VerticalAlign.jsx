@@ -21,7 +21,7 @@ const VerticalAlign = () => {
         </div>
       </div>
       <div className="row" style={{ minHeight: '400px', marginTop: '2rem' }}>
-        <div className="col align-self-start">
+        <div className="col align-self-end">
           <div className="p-3 bg-dark text-white border rounded" style={{ height: '10rem', justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
            We believe in the power of teamwork and partnerships.
           </div>
@@ -31,11 +31,11 @@ const VerticalAlign = () => {
            We are committed to environmentally responsible practices.
           </div>
         </div>
-        {/* <div className="col align-self-end">
-          <div className="p-3 bg-success text-white border rounded">
-            We believe in the power of teamwork and partnerships.
+        <div className="col align-self-start">
+          <div className="p-3 bg-danger text-white border rounded" style={{ height: '10rem', justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
+            We take pride in delivering exceptional service and value to our clients.
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
