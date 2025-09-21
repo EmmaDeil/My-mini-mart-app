@@ -2,8 +2,9 @@ import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import SpotlightCard from "../components/SpotlightCard";
-import UserCard from "../components/UserCard";
 import { Handshake } from "lucide-react";
+import TeamSection from "./TeamSection";
+
 
 const About = () => {
   return (
@@ -83,95 +84,7 @@ const About = () => {
         </div>
       </div>
 
-      <h3 className="about-h3">Meet Our Team</h3>
-      <p className="aboutlead">
-        Our team is composed of dedicated professionals with diverse backgrounds
-        and expertise in facility management, technology, and customer service.
-        We work collaboratively to deliver the best solutions for our clients.
-      </p>
-      <div className="container-fluid team-section">
-        <div className="row">
-          <span className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="David Emma"
-              className="teamImg"
-            />
-            <h6>David Emmaunel O.</h6>
-            <p>
-              <i>CEO</i>
-            </p>
-          </span>
-          <span className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="John Doe"
-              className="teamImg"
-            />
-            <h6>John Doe</h6>
-            <p>
-              <i>Facility Manager</i>
-            </p>
-          </span>
-          <span className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="Jane Smith"
-              className="teamImg"
-            />
-
-            <h6>Jane Smith</h6>
-            <p>
-              <i>Technology Specialist</i>
-            </p>
-          </span>
-          <span className="col">
-            <img
-              src="../src/assets/man1.png"
-              alt="Emily Johnson"
-              className="teamImg"
-            />
-            <h6>Emily Johnson</h6>
-            <p>
-              <i>Customer Service Representative</i>
-            </p>
-          </span>
-        </div>
-      </div>
-      {/* <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-  
-</SpotlightCard> */}
-      <div
-        className="user-cards-container"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          flexWrap: "wrap",
-          padding: "15px",
-        }}
-      >
-        <UserCard
-          name="Alice Johnson"
-          age={28}
-          role="Frontend Developer"
-          avatar="./src/assets/man1.png"
-          isOnline={true}
-        />
-        <UserCard
-          name="Bob Smith"
-          age={35}
-          role="Backend Developer"
-          avatar="https://i.pravatar.cc/150?img=2"
-          isOnline={false}
-        />
-        <UserCard
-          name="Carol Davis"
-          age={31}
-          role="UI/UX Designer"
-          avatar="https://i.pravatar.cc/150?img=3"
-          isOnline={true}
-        />
-      </div>
+       <TeamSection />
     </div>
   );
 };
